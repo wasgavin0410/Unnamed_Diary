@@ -11,7 +11,7 @@ public class entrance_diary extends AppCompatActivity {
     //至於裡面的功能還是要透過activity來控制，所以不用擔心版面功能會撞到
 
     private ViewPager mPager;
-    page_adapter thePageAdapter = new page_adapter();
+    private page_adapter thePageAdapter = new page_adapter();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
