@@ -1,5 +1,6 @@
 package com.example.gavin.unnamed_diary;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,9 +20,10 @@ public class entrance_diary extends AppCompatActivity {
         setContentView(R.layout.entrance_page);
 
         //讓Adapter取得當下頁面之context及初始化adapter資料
-        thePageAdapter.getTheContent(this);
+        thePageAdapter.getTheContext(this);
         thePageAdapter.initialData();
         initialView();
+
     }
 
     private void initialView(){
@@ -31,6 +33,5 @@ public class entrance_diary extends AppCompatActivity {
         mPager.setAdapter(thePageAdapter);
 
     }
-
 
 }

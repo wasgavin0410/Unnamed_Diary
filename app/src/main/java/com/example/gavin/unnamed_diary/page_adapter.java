@@ -21,7 +21,7 @@ public class page_adapter extends PagerAdapter{
     List<page_view> pageList;
     private Context copiedContext;
 
-    public void getTheContent(Context context){
+    public void getTheContext(Context context){
 
         //複製當下頁面的context名稱，用以做接下來的參數
         copiedContext = context;
@@ -34,7 +34,7 @@ public class page_adapter extends PagerAdapter{
 
         pageList = new ArrayList<>();
         pageList.add(new for_showing(copiedContext));
-        pageList.add(new main_diaryPage().new adapting_activity(copiedContext));
+        pageList.add(new for_transition().new adapting_activity(copiedContext));
 
     }
 

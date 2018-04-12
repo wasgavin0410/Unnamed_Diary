@@ -42,16 +42,16 @@ public class adapter4Main extends RecyclerView.Adapter<adapter4Main.theViewHolde
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recycle_items,parent,false);
 
-        return new theViewHolder(itemView);
+        theViewHolder takeOnMe = new theViewHolder(itemView);
+
+        return takeOnMe;
 
     }
 
     @Override
     public void onBindViewHolder(theViewHolder holder, int position) {
 
-        String messages = List4Storage.get(position);
-        TextView txt = (TextView)holder.itemView;
-        txt.setText(messages);
+        holder.messageView.setText(List4Storage.get(position));
 
     }
 

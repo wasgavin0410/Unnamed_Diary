@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/book"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".entrance_diary"
+        <activity
+            android:name=".entrance_diary"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".main_diaryPage"></activity>
+        <activity android:name=".main_diaryPage" />
+        <activity android:name=".for_transition"></activity>
     </application>
 
 </manifest>
