@@ -22,14 +22,14 @@ public class adapter4Main extends RecyclerView.Adapter<adapter4Main.theViewHolde
     public class theViewHolder extends RecyclerView.ViewHolder{
 
         public ImageView theIcon,theChatBox;
-        public TextView messageView;
+        public TextView theText;
 
         public theViewHolder(View v){
 
             super(v);
             theIcon = v.findViewById(R.id.theIcon);
             theChatBox = v.findViewById(R.id.theChatBox);
-            messageView = v.findViewById(R.id.messageView);
+            theText = v.findViewById(R.id.messageView);
 
         }
 
@@ -51,7 +51,7 @@ public class adapter4Main extends RecyclerView.Adapter<adapter4Main.theViewHolde
     @Override
     public void onBindViewHolder(theViewHolder holder, int position) {
 
-        holder.messageView.setText(List4Storage.get(position));
+        holder.theText.setText(List4Storage.get(position));
 
     }
 
