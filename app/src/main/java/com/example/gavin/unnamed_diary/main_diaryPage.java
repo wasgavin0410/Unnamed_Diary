@@ -1,21 +1,11 @@
 package com.example.gavin.unnamed_diary;
 
-import android.content.Context;
-import android.content.Intent;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.SimpleCursorAdapter;
-import android.widget.Toast;
 
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 
 /*
@@ -78,7 +68,6 @@ public class main_diaryPage extends AppCompatActivity {
 
         if (c_atMain.moveToFirst()){
 
-            //dataFromMain.add(c_atMain.getString(1));
 
             do{
                 dataFromMain.add(c_atMain.getString(1));
