@@ -46,6 +46,15 @@ public class main_diaryPage extends AppCompatActivity {
         FloatingActionButton btnFloating = findViewById(R.id.theFloatingGuy);
         btnFloating.attachToRecyclerView(showing_boxes);
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(main_diaryPage.this,writingPage.class);
+                startActivity(i);
+                main_diaryPage.this.finish();//結束目前Activity
+            }
+        });
     }
 
     private void initialDB(){
