@@ -5,6 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
+import com.melnykov.fab.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -39,6 +42,9 @@ public class main_diaryPage extends AppCompatActivity {
         showing_boxes.setAdapter(adapting);
         showing_boxes.setLayoutManager(new LinearLayoutManager(this));
         adapting.notifyDataSetChanged();
+
+        FloatingActionButton btnFloating = findViewById(R.id.theFloatingGuy);
+        btnFloating.attachToRecyclerView(showing_boxes);
 
     }
 
