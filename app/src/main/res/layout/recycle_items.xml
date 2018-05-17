@@ -38,6 +38,8 @@
         android:text="Say something..."
         android:textColor="@android:color/black"
         android:textSize="18sp"
+        android:scrollbars="vertical"
+
         app:layout_constraintBottom_toBottomOf="@id/theChatBox"
         app:layout_constraintEnd_toEndOf="@id/theChatBox"
         app:layout_constraintStart_toStartOf="@id/theChatBox"

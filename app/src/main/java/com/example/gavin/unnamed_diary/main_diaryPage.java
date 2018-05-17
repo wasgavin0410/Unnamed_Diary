@@ -1,10 +1,13 @@
 package com.example.gavin.unnamed_diary;
 
+import android.content.Intent;
 import android.database.Cursor;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -40,6 +43,15 @@ public class main_diaryPage extends AppCompatActivity {
         showing_boxes.setLayoutManager(new LinearLayoutManager(this));
         adapting.notifyDataSetChanged();
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(main_diaryPage.this,writingPage.class);
+                startActivity(i);
+                main_diaryPage.this.finish();//結束目前Activity
+            }
+        });
     }
 
     private void initialDB(){

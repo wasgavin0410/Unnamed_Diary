@@ -1,6 +1,7 @@
 package com.example.gavin.unnamed_diary;
 
 import android.support.v7.widget.RecyclerView;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,6 +32,7 @@ public class adapter4Main extends RecyclerView.Adapter<adapter4Main.theViewHolde
             theChatBox = v.findViewById(R.id.theChatBox);
             theText = v.findViewById(R.id.messageView);
 
+            theText.setMovementMethod(new ScrollingMovementMethod());
         }
 
     }
