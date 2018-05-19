@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+<<<<<<< HEAD
 
 import com.melnykov.fab.FloatingActionButton;
 
@@ -48,6 +49,7 @@ public class main_diaryPage extends AppCompatActivity {
         FloatingActionButton btnFloating = findViewById(R.id.theFloatingGuy);
         btnFloating.attachToRecyclerView(showing_boxes);
 
+>>>>>>> fbc08b0c41e28cfe882461f2470a80a1aeacc281
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
